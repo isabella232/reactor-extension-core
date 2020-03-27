@@ -23,7 +23,7 @@ const renderItem = field => (
     <span className="u-flexCenter u-gapRight">Hash equals</span>
     <label className="u-gapRight u-flexOne">
       <WrappedField
-        className="u-fullWidth"
+        className="u-flexOne"
         name={`${field}.value`}
         component={Textfield}
         componentClassName="u-fullWidth u-minFieldWidth"

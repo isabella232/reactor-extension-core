@@ -3,6 +3,10 @@ $px = 0rem + (1 / $rem-size);
 $fieldHeight = 32*$px;
 $gap = 8*$px;
 
+* {
+  box-sizing: border-box;
+}
+
 // This is padding that goes around all the content. We put the padding on the Provider container
 // instead of the body because of https://jira.corp.adobe.com/browse/RSP-276
 .react-spectrum-provider {
@@ -24,7 +28,7 @@ code {
 }
 
 .u-toolTipMinimumSize {
-  min-width:  120*$px !important;
+  margin-right: 120*$px !important;
 }
 
 // This provides enough padding to the right of the 'learn more' link on events
@@ -135,14 +139,18 @@ code {
   /* https://stackoverflow.com/questions/28636832/firefox-overflow-y-not-working-with-nested-flexbox#answer-28639686 */
   /* change these to auto when the browsers support it */
   /* https://drafts.csswg.org/css-flexbox/#min-size-auto */
-  min-width: 0;
-  min-height: 0;
+  //min-width: 0;
+  //min-height: 0;
 }
 
-.u-flexOne { 
-  flex: 1; 
+.u-flexOne {
+  flex: 1 !important;
 } /* stylus doesn't like us using !important here. */
 
-.u-flexCenter { 
-  align-self: center !important; 
+.u-flexCenter {
+  align-self: center !important;
+}
+
+.u-alignItemsCenter {
+  align-items: center !important;
 }

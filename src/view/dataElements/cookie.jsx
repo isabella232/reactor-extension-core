@@ -23,7 +23,7 @@ const Cookie = () => (
       component={Textfield}
       componentClassName="u-fullWidth u-minFieldWidth"
     />
-    <div className="u-toolTipMinimumSize"> </div>
+    <span className="u-toolTipMinimumSize"> </span>
   </label>
 );
 

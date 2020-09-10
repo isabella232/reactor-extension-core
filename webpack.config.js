@@ -46,11 +46,7 @@ module.exports = env => {
               title: itemDescriptor.displayName,
               filename: `${chunkName}.html`,
               template: 'src/view/template.html',
-              chunks: ['common', chunkName],
-              react_dev_hook:
-                env === 'sandbox'
-                  ? '<script> __REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__ </script>'
-                  : ''
+              chunks: ['common', chunkName]
             })
           );
         }
